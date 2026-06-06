@@ -7,7 +7,6 @@
 <title>Salman Portfolio</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -16,7 +15,7 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:black;
+background:#000;
 color:white;
 }
 
@@ -33,37 +32,35 @@ color:white;
 text-decoration:none;
 margin:15px;
 font-size:18px;
-font-weight:bold;
-}
-
-nav a:hover{
-color:gold;
 }
 
 .hero{
 height:100vh;
-background:url('trophy.jpg');
+background:url('background.jpg');
 background-size:cover;
 background-position:center;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
 }
 
-.hero-content{
-background:rgba(0,0,0,0.6);
-padding:30px;
-border-radius:15px;
+.profile{
+width:220px;
+height:220px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
+margin-bottom:20px;
 }
 
-.hero h1{
-font-size:50px;
-color:gold;
+h1{
+font-size:55px;
 }
 
 .hero p{
-font-size:22px;
+font-size:24px;
 margin-top:10px;
 }
 
@@ -71,186 +68,115 @@ margin-top:10px;
 display:inline-block;
 margin-top:20px;
 padding:12px 25px;
-background:green;
+background:red;
 color:white;
 text-decoration:none;
-border-radius:8px;
-font-size:18px;
+border-radius:10px;
 }
 
-.section{
+section{
 padding:60px 20px;
 text-align:center;
-}
-
-.section h2{
-color:gold;
-margin-bottom:20px;
-}
-
-.about{
-max-width:800px;
-margin:auto;
-font-size:20px;
-line-height:1.8;
-}
-
-.gallery{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-}
-
-.gallery img{
-width:300px;
-border-radius:15px;
-border:3px solid gold;
 }
 
 .card{
 background:#111;
 padding:20px;
-margin:15px auto;
-max-width:600px;
-border-radius:10px;
+margin:20px auto;
+max-width:800px;
+border-radius:15px;
+}
+
+.gallery img{
+width:300px;
+max-width:90%;
+margin:15px;
+border-radius:15px;
+border:3px solid white;
 }
 
 footer{
 background:#111;
 padding:20px;
 text-align:center;
-margin-top:40px;
 }
-
-#clock{
-font-size:30px;
-color:gold;
-margin-top:20px;
-}
-
 </style>
-</head>
 
+</head>
 <body>
 
 <nav>
 <a href="#home">Home</a>
 <a href="#about">About</a>
-<a href="#gallery">Gallery</a>
 <a href="#skills">Skills</a>
+<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <section class="hero" id="home">
-<div class="hero-content">
+
+<img src="myphoto.jpg" class="profile">
+
 <h1>🏏 Salman Portfolio 🎨</h1>
+
 <p>Cricketer | Artist | Web Developer</p>
-<p>Winner • Creator • Dreamer</p>
-<a href="#contact" class="btn">Contact Me</a>
-<div id="clock"></div>
-</div>
+
+<a href="https://www.tiktok.com/@cricketkingsalman" class="btn">
+Follow Me On TikTok
+</a>
+
 </section>
 
-<section class="section" id="about">
+<section id="about">
 <h2>About Me</h2>
 
-<div class="about">
-<p>My name is Salman.</p>
-<p>I am a Cricketer, Artist and Beginner Web Developer.</p>
-<p>I love Cricket, Painting and Learning New Skills.</p>
+<div class="card">
+<p>
+My name is Salman. I am from Pakistan.
+I am a Cricketer, Artist and Web Developer.
+Welcome to my personal portfolio website.
+</p>
 </div>
 
 </section>
 
-<section class="section" id="gallery">
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="card">🏏 Cricket</div>
+
+<div class="card">🎨 Painting & Art</div>
+
+<div class="card">💻 HTML & CSS</div>
+
+</section>
+
+<section id="gallery">
 
 <h2>My Gallery</h2>
 
 <div class="gallery">
-
 <img src="trophy.jpg" alt="Trophy">
-
-<img src="salman.jpg" alt="Salman">
-
 <img src="art.jpg" alt="Art">
-
 </div>
 
 </section>
 
-<section class="section" id="skills">
-
-<h2>My Skills</h2>
-
-<div class="card">
-🏏 Cricket
-</div>
-
-<div class="card">
-🎨 Painting
-</div>
-
-<div class="card">
-💻 HTML & CSS
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>Achievements</h2>
-
-<div class="card">
-🏆 Trophy Winner
-</div>
-
-<div class="card">
-🎨 Drawing & Art Creator
-</div>
-
-<div class="card">
-🌐 Portfolio Website Creator
-</div>
-
-</section>
-
-<section class="section" id="contact">
+<section id="contact">
 
 <h2>Contact Me</h2>
 
 <div class="card">
-📱 TikTok: cricketkingsalman
-</div>
-
-<div class="card">
-📧 Your Email Here
+<p>TikTok: @cricketkingsalman</p>
+<p>Thank You For Visiting My Website.</p>
 </div>
 
 </section>
 
 <footer>
-
-<p>© 2026 Salman Portfolio</p>
-
+© 2026 Salman Portfolio | All Rights Reserved
 </footer>
-
-<script>
-
-function updateClock(){
-
-const now=new Date();
-
-document.getElementById("clock").innerHTML=
-now.toLocaleTimeString();
-
-}
-
-setInterval(updateClock,1000);
-
-updateClock();
-
-</script>
 
 </body>
 </html>
