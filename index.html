@@ -23,8 +23,6 @@ nav{
 background:#111;
 padding:15px;
 text-align:center;
-position:sticky;
-top:0;
 }
 
 nav a{
@@ -44,34 +42,38 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:20px;
 }
 
 .profile{
-width:220px;
-height:220px;
+width:450px;
+height:450px;
+max-width:90%;
 border-radius:50%;
-border:5px solid white;
+border:8px solid white;
 object-fit:cover;
 margin-bottom:20px;
+box-shadow:0 0 30px white;
 }
 
-h1{
+.hero h1{
 font-size:55px;
+margin-bottom:10px;
 }
 
 .hero p{
 font-size:24px;
-margin-top:10px;
+margin-bottom:15px;
 }
 
 .btn{
 display:inline-block;
-margin-top:20px;
 padding:12px 25px;
 background:red;
 color:white;
 text-decoration:none;
 border-radius:10px;
+font-size:20px;
 }
 
 section{
@@ -87,12 +89,18 @@ max-width:800px;
 border-radius:15px;
 }
 
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
 .gallery img{
-width:300px;
+width:350px;
 max-width:90%;
-margin:15px;
 border-radius:15px;
-border:3px solid white;
+border:4px solid white;
 }
 
 footer{
@@ -115,7 +123,7 @@ text-align:center;
 
 <section class="hero" id="home">
 
-<img src="myphoto.jpg" class="profile">
+<img src="myphoto.jpg" alt="Salman" class="profile">
 
 <h1>🏏 Salman Portfolio 🎨</h1>
 
@@ -134,20 +142,17 @@ Follow Me On TikTok
 <p>
 My name is Salman. I am from Pakistan.
 I am a Cricketer, Artist and Web Developer.
-Welcome to my personal portfolio website.
+Welcome to my personal website.
 </p>
 </div>
 
 </section>
 
 <section id="skills">
-
 <h2>My Skills</h2>
 
 <div class="card">🏏 Cricket</div>
-
 <div class="card">🎨 Painting & Art</div>
-
 <div class="card">💻 HTML & CSS</div>
 
 </section>
@@ -175,7 +180,7 @@ Welcome to my personal portfolio website.
 </section>
 
 <footer>
-© 2026 Salman Portfolio | All Rights Reserved
+© 2026 Salman Portfolio
 </footer>
 
 </body>
