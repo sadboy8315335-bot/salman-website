@@ -1,137 +1,256 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Salman Portfolio</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:black;
-    color:white;
-    text-align:center;
+background:black;
+color:white;
 }
 
 nav{
-    background:#222;
-    padding:15px;
+background:#111;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-    font-weight:bold;
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:gold;
 }
 
 .hero{
-    padding:60px 20px;
+height:100vh;
+background:url('trophy.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.6);
+padding:30px;
+border-radius:15px;
 }
 
 .hero h1{
-    color:gold;
-    font-size:40px;
+font-size:50px;
+color:gold;
 }
 
 .hero p{
-    font-size:20px;
-}
-
-.section{
-    padding:40px 20px;
-}
-
-.card{
-    background:#111;
-    margin:15px auto;
-    padding:20px;
-    border-radius:10px;
-    max-width:500px;
+font-size:22px;
+margin-top:10px;
 }
 
 .btn{
-    display:inline-block;
-    background:green;
-    color:white;
-    padding:12px 25px;
-    text-decoration:none;
-    border-radius:5px;
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:green;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:18px;
+}
+
+.section{
+padding:60px 20px;
+text-align:center;
+}
+
+.section h2{
+color:gold;
+margin-bottom:20px;
+}
+
+.about{
+max-width:800px;
+margin:auto;
+font-size:20px;
+line-height:1.8;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.gallery img{
+width:300px;
+border-radius:15px;
+border:3px solid gold;
+}
+
+.card{
+background:#111;
+padding:20px;
+margin:15px auto;
+max-width:600px;
+border-radius:10px;
 }
 
 footer{
-    background:#222;
-    padding:20px;
-    margin-top:30px;
+background:#111;
+padding:20px;
+text-align:center;
+margin-top:40px;
 }
+
+#clock{
+font-size:30px;
+color:gold;
+margin-top:20px;
+}
+
 </style>
 </head>
 
 <body>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <section class="hero" id="home">
-    <h1>Salman Portfolio</h1>
-    <p>I am a Cricketer, Painter and Beginner Web Developer</p>
-    <a href="#contact" class="btn">Contact Me</a>
+<div class="hero-content">
+<h1>🏏 Salman Portfolio 🎨</h1>
+<p>Cricketer | Artist | Web Developer</p>
+<p>Winner • Creator • Dreamer</p>
+<a href="#contact" class="btn">Contact Me</a>
+<div id="clock"></div>
+</div>
 </section>
 
 <section class="section" id="about">
-    <h2>About Me</h2>
-    <div class="card">
-        <p>My name is Salman.</p>
-        <p>I am from Pakistan.</p>
-        <p>I love Cricket, Painting and Web Development.</p>
-    </div>
+<h2>About Me</h2>
+
+<div class="about">
+<p>My name is Salman.</p>
+<p>I am a Cricketer, Artist and Beginner Web Developer.</p>
+<p>I love Cricket, Painting and Learning New Skills.</p>
+</div>
+
+</section>
+
+<section class="section" id="gallery">
+
+<h2>My Gallery</h2>
+
+<div class="gallery">
+
+<img src="trophy.jpg" alt="Trophy">
+
+<img src="salman.jpg" alt="Salman">
+
+<img src="art.jpg" alt="Art">
+
+</div>
+
 </section>
 
 <section class="section" id="skills">
-    <h2>My Skills</h2>
 
-    <div class="card">
-        <h3>🏏 Cricket</h3>
-        <p>I enjoy playing cricket and improving my skills.</p>
-    </div>
+<h2>My Skills</h2>
 
-    <div class="card">
-        <h3>🎨 Painting</h3>
-        <p>I love making drawings and paintings.</p>
-    </div>
+<div class="card">
+🏏 Cricket
+</div>
 
-    <div class="card">
-        <h3>💻 Web Development</h3>
-        <p>I am learning HTML and CSS.</p>
-    </div>
+<div class="card">
+🎨 Painting
+</div>
+
+<div class="card">
+💻 HTML & CSS
+</div>
+
 </section>
 
 <section class="section">
-    <h2>My Goals</h2>
-    <div class="card">
-        <p>Become a successful Cricketer.</p>
-        <p>Become a skilled Web Developer.</p>
-        <p>Create amazing websites.</p>
-    </div>
+
+<h2>Achievements</h2>
+
+<div class="card">
+🏆 Trophy Winner
+</div>
+
+<div class="card">
+🎨 Drawing & Art Creator
+</div>
+
+<div class="card">
+🌐 Portfolio Website Creator
+</div>
+
 </section>
 
 <section class="section" id="contact">
-    <h2>Contact Me</h2>
 
-    <div class="card">
-        <p>📱 TikTok: cricketkingsalman</p>
-        <p>📧 Email: your-email@gmail.com</p>
-    </div>
+<h2>Contact Me</h2>
+
+<div class="card">
+📱 TikTok: cricketkingsalman
+</div>
+
+<div class="card">
+📧 Your Email Here
+</div>
+
 </section>
 
 <footer>
-    <p>© 2026 Salman Portfolio. All Rights Reserved.</p>
+
+<p>© 2026 Salman Portfolio</p>
+
 </footer>
+
+<script>
+
+function updateClock(){
+
+const now=new Date();
+
+document.getElementById("clock").innerHTML=
+now.toLocaleTimeString();
+
+}
+
+setInterval(updateClock,1000);
+
+updateClock();
+
+</script>
 
 </body>
 </html>
